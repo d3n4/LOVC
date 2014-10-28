@@ -1,0 +1,9 @@
+C:\Users\DENFER\Downloads\LOVC+Zelectro\LOVC\LOVC\bin\Debug\Gamedata\Rooms\model1.map
+C:\Users\DENFER\Downloads\LOVC+Zelectro\LOVC\LOVC\bin\Debug\Gamedata\Rooms\model2.map
+C:\Users\DENFER\Downloads\LOVC+Zelectro\LOVC\LOVC\bin\Debug\Gamedata\Rooms\model3.map
+C:\Users\DENFER\Downloads\LOVC+Zelectro\LOVC\LOVC\bin\Debug\Gamedata\Rooms\model4.map
+C:\Users\DENFER\Downloads\LOVC+Zelectro\LOVC\LOVC\bin\Debug\LOVC.exe
+C:\Users\DENFER\Downloads\LOVC+Zelectro\LOVC\LOVC\bin\Debug\LOVC.pdb
+C:\Users\DENFER\Downloads\LOVC+Zelectro\LOVC\LOVC\obj\x86\Debug\LOVC.csprojResolveAssemblyReference.cache
+C:\Users\DENFER\Downloads\LOVC+Zelectro\LOVC\LOVC\obj\x86\Debug\LOVC.exe
+C:\Users\DENFER\Downloads\LOVC+Zelectro\LOVC\LOVC\obj\x86\Debug\LOVC.pdb

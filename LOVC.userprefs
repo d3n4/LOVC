@@ -1,0 +1,49 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LOVC/Program.cs">
+    <Files>
+      <File FileName="LOVC/LOVC/Chat/SayMode.cs" Line="1" Column="1" />
+      <File FileName="LOVC/LOVC/Room/LeaveReason.cs" Line="1" Column="1" />
+      <File FileName="LOVC/Program.cs" Line="39" Column="29" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="LOVC" expanded="True">
+            <Node name="Gamedata" expanded="True">
+              <Node name="Rooms" expanded="True" />
+            </Node>
+            <Node name="LOVC" expanded="True">
+              <Node name="Chat" expanded="True" />
+              <Node name="Player" expanded="True" />
+              <Node name="Room" expanded="True" />
+            </Node>
+            <Node name="Platform" expanded="True">
+              <Node name="Utils" expanded="True" />
+              <Node name="Vectors" expanded="True" />
+              <Node name="VK" expanded="True">
+                <Node name="Responses" expanded="True" />
+              </Node>
+              <Node name="WebSockets" expanded="True">
+                <Node name="Packets" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Program.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>OnRequest</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

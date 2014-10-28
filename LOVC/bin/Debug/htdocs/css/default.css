@@ -1,0 +1,85 @@
+/**
+ * Default page body and demo CSS structure
+ * also includes styles overwriting bootstrap defaults
+**/
+body {
+    background-color: #eef3f6;
+}
+
+#w {
+    margin-top: 45px;
+    padding: 20px 11px;
+    background: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 6px -1px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 1px 6px -1px rgba(0,0,0,0.7);
+    box-shadow: 0 1px 6px -1px rgba(0,0,0,0.7);
+}
+
+/** Bootstrap Dark Modal Styles **/
+.modal-open .modal, .btn:focus {
+    outline: none !important;
+}
+
+.modal.dark { background-color: #2d3032; }
+.modal.dark .modal-body {
+    background: #40464b;
+}
+
+.modal.dark .modal-header {
+    background: #2d3032;
+    border-bottom: 1px solid #2a2c2e;
+}
+.modal.dark .modal-header h1, .modal.dark .modal-header h2, .modal.dark .modal-header h3, .modal.dark .modal-header h4 {
+    color: #ccc;
+}
+
+.modal.dark .modal-footer {
+    background: #2d3032;
+    border-top: 1px solid #2a2c2e;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/**
+ * Custom CSS3 Checkboxes for modal windows
+ * Source: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons/
+**/
+input[type="checkbox"] { display: none; }
+input[type="checkbox"] + label { color: #f2f2f2; font-size: 14px; }
+
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url('check_radio_sheet.png') left top no-repeat;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background: url('check_radio_sheet.png') -19px top no-repeat;
+}
+
+input[type="radio"] { display: none; }
+
+input[type="radio"] + label { color: #f2f2f2; font-size: 14px; }
+
+input[type="radio"] + label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url('check_radio_sheet.png') -38px top no-repeat;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label span {
+    background: url('check_radio_sheet.png') -57px top no-repeat;
+}

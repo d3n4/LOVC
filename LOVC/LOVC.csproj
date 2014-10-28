@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34D3A851-4212-4851-AC66-5D62DA3EEA5A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LOVC</RootNamespace>
+    <AssemblyName>LOVC</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>True</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>True</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thirtparty\fastJSON\Formatter.cs" />
+    <Compile Include="Thirtparty\fastJSON\Getters.cs" />
+    <Compile Include="Thirtparty\fastJSON\JSON.cs" />
+    <Compile Include="Thirtparty\fastJSON\JsonParser.cs" />
+    <Compile Include="Thirtparty\fastJSON\JsonSerializer.cs" />
+    <Compile Include="Thirtparty\fastJSON\Reflection.cs" />
+    <Compile Include="Thirtparty\fastJSON\SafeDictionary.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\Security\SslStream.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\WebSockets\HttpListenerWebSocketContext.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\WebSockets\TcpListenerWebSocketContext.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\WebSockets\WebSocketContext.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\AuthenticationSchemes.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\AuthenticationSchemeSelector.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\ChunkedInputStream.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\ChunkStream.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\Cookie.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\CookieCollection.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\CookieException.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\EndPointListener.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\EndPointManager.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpConnection.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpHeaderInfo.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpHeaderType.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpListener.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpListenerContext.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpListenerException.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpListenerPrefixCollection.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpListenerRequest.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpListenerResponse.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpStatusCode.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpStreamAsyncResult.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpUtility.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\HttpVersion.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\ListenerAsyncResult.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\ListenerPrefix.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\RequestStream.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\ResponseStream.cs" />
+    <Compile Include="Thirtparty\WebSockets\Net\WebHeaderCollection.cs" />
+    <Compile Include="Thirtparty\WebSockets\Server\HttpRequestEventArgs.cs" />
+    <Compile Include="Thirtparty\WebSockets\Server\HttpServer.cs" />
+    <Compile Include="Thirtparty\WebSockets\Server\IServiceHost.cs" />
+    <Compile Include="Thirtparty\WebSockets\Server\ServiceHostManager.cs" />
+    <Compile Include="Thirtparty\WebSockets\Server\WebSocketServer.cs" />
+    <Compile Include="Thirtparty\WebSockets\Server\WebSocketServerBase.cs" />
+    <Compile Include="Thirtparty\WebSockets\Server\WebSocketService.cs" />
+    <Compile Include="Thirtparty\WebSockets\Server\WebSocketServiceHost.cs" />
+    <Compile Include="Thirtparty\WebSockets\Server\WebSocketServiceManager.cs" />
+    <Compile Include="Thirtparty\WebSockets\ByteOrder.cs" />
+    <Compile Include="Thirtparty\WebSockets\CloseEventArgs.cs" />
+    <Compile Include="Thirtparty\WebSockets\CloseStatusCode.cs" />
+    <Compile Include="Thirtparty\WebSockets\CompressionMethod.cs" />
+    <Compile Include="Thirtparty\WebSockets\ErrorEventArgs.cs" />
+    <Compile Include="Thirtparty\WebSockets\Ext.cs" />
+    <Compile Include="Thirtparty\WebSockets\Fin.cs" />
+    <Compile Include="Thirtparty\WebSockets\Handshake.cs" />
+    <Compile Include="Thirtparty\WebSockets\Mask.cs" />
+    <Compile Include="Thirtparty\WebSockets\MessageEventArgs.cs" />
+    <Compile Include="Thirtparty\WebSockets\Opcode.cs" />
+    <Compile Include="Thirtparty\WebSockets\PayloadData.cs" />
+    <Compile Include="Thirtparty\WebSockets\RequestHandshake.cs" />
+    <Compile Include="Thirtparty\WebSockets\ResponseHandshake.cs" />
+    <Compile Include="Thirtparty\WebSockets\Rsv.cs" />
+    <Compile Include="Thirtparty\WebSockets\WebSocket.cs" />
+    <Compile Include="Thirtparty\WebSockets\WebSocketException.cs" />
+    <Compile Include="Thirtparty\WebSockets\WsFrame.cs" />
+    <Compile Include="Thirtparty\WebSockets\WsState.cs" />
+    <Compile Include="Thirtparty\WebSockets\WsStream.cs" />
+    <Compile Include="LOVC\GameService.cs" />
+    <Compile Include="Platform\WebSockets\NetService.cs" />
+    <Compile Include="Platform\WebSockets\NetAccessible.cs" />
+    <Compile Include="Platform\WebSockets\Packets\InvokePackage.cs" />
+    <Compile Include="Platform\Vectors\Vector2.cs" />
+    <Compile Include="Platform\Vectors\Vector3.cs" />
+    <Compile Include="Platform\VK\VK.cs" />
+    <Compile Include="Platform\Utils\MD5.cs" />
+    <Compile Include="LOVC\Player\Player.cs" />
+    <Compile Include="LOVC\Room\Room.cs" />
+    <Compile Include="LOVC\Room\RoomModel.cs" />
+    <Compile Include="LOVC\Room\LocationType.cs" />
+    <Compile Include="LOVC\Player\Players.cs" />
+    <Compile Include="LOVC\Room\RoomManager.cs" />
+    <Compile Include="LOVC\Room\LeaveReason.cs" />
+    <Compile Include="LOVC\Room\RoomInfo.cs" />
+    <Compile Include="LOVC\Chat\SayMode.cs" />
+    <Compile Include="Platform\Utils\HttpClient.cs" />
+    <Compile Include="Platform\VK\VKClient.cs" />
+    <Compile Include="Platform\VK\Responses\UserInfo.cs" />
+    <Compile Include="Platform\VK\Responses\Response.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Thirtparty\" />
+    <Folder Include="LOVC\" />
+    <Folder Include="Platform\" />
+    <Folder Include="Platform\WebSockets\" />
+    <Folder Include="Platform\WebSockets\Packets\" />
+    <Folder Include="Platform\Vectors\" />
+    <Folder Include="Platform\VK\" />
+    <Folder Include="Platform\Utils\" />
+    <Folder Include="LOVC\Room\" />
+    <Folder Include="Gamedata\" />
+    <Folder Include="Gamedata\Rooms\" />
+    <Folder Include="LOVC\Chat\" />
+    <Folder Include="Platform\VK\Responses\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gamedata\Rooms\model1.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamedata\Rooms\model2.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamedata\Rooms\model3.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Gamedata\Rooms\model4.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

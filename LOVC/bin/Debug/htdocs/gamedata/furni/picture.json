@@ -1,0 +1,28 @@
+{
+	"id": "mona",
+	"sprite": "/furni/picture.png",
+	"size": [40, 71],
+    "isoSize": 1,
+    "type": "none",
+	"map":
+	{
+		"origin": [0,16],
+		"height": 40,
+		"sides":
+		[
+			{
+				"0x0":
+					[
+						{ "frame": [0,0], "offset": [0,71] }
+					]
+			},
+
+			{
+				"0x0":
+					[
+						{ "frame": [1,0], "offset": [0,71] }
+					]
+			}
+		]
+	}
+}

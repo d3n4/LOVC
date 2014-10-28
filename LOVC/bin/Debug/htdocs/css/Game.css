@@ -1,0 +1,474 @@
+.ChatMessage-Normal {
+    color: #000;
+    font-weight: 200;
+}
+
+.ChatMessage-Shout {
+    color: #000;
+    font-weight: 700;
+}
+
+.ChatMessage-Whisper {
+    color: #646464;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.ChatMessage-Action {
+    color: rgb(65, 105, 125);
+    font-weight: 200;
+}
+
+ChatBubble {
+    display: block;
+}
+
+ChatBubble > ChatBubbleLeft {
+    -webkit-box-shadow:  1px 1px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow:  1px 1px 0px 0px rgba(0, 0, 0, 1);
+}
+
+ChatBubble > ChatBubbleMessage {
+    -webkit-box-shadow:  1px 1px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow:  1px 1px 0px 0px rgba(0, 0, 0, 1);
+}
+
+ChatBubble > ChatBubbleLeft {
+    background: #e8e8e8;
+    background: -moz-linear-gradient(top,  #e8e8e8 29%, #cccccc 30%, #cccccc 69%, #cccccc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(29%,#e8e8e8), color-stop(30%,#cccccc), color-stop(69%,#cccccc), color-stop(100%,#cccccc));
+    background: -webkit-linear-gradient(top,  #e8e8e8 29%,#cccccc 30%,#cccccc 69%,#cccccc 100%);
+    background: -o-linear-gradient(top,  #e8e8e8 29%,#cccccc 30%,#cccccc 69%,#cccccc 100%);
+    background: -ms-linear-gradient(top,  #e8e8e8 29%,#cccccc 30%,#cccccc 69%,#cccccc 100%);
+    background: linear-gradient(to bottom,  #e8e8e8 29%,#cccccc 30%,#cccccc 69%,#cccccc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#cccccc',GradientType=0 );
+}
+
+ChatBubble > ChatBubbleMessage {
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 29%, #ededed 30%, #ededed 69%, #ededed 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(29%,#ffffff), color-stop(30%,#ededed), color-stop(69%,#ededed), color-stop(100%,#ededed));
+    background: -webkit-linear-gradient(top,  #ffffff 29%,#ededed 30%,#ededed 69%,#ededed 100%);
+    background: -o-linear-gradient(top,  #ffffff 29%,#ededed 30%,#ededed 69%,#ededed 100%);
+    background: -ms-linear-gradient(top,  #ffffff 29%,#ededed 30%,#ededed 69%,#ededed 100%);
+    background: linear-gradient(to bottom,  #ffffff 29%,#ededed 30%,#ededed 69%,#ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+}
+
+ChatBubbleLeft > img {
+    position: relative;
+    top: -16px;
+    left: -7px;
+    padding: 1px;
+    width: 39px;
+    height: 36px;
+}
+
+ChatBubbleLeft {
+    background-color: #cccccc;
+    height: 22px;
+    width: 40px;
+    border: 1px solid #000000;
+    position: relative;
+    display: inline-block;
+    -webkit-border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+ChatBubbleMessage {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: #000;
+    font-weight: 200;
+    height: 16px;
+    padding: 4px 5px 2px 5px;
+    left: 29px;
+    top: 0px;
+    position: absolute;
+    background: #ededed;
+    border: 1px solid #000000;
+    display: inline-block;
+    -webkit-border-radius: 0px 4px 4px 0px;
+    border-radius: 0px 4px 4px 0px;
+    word-break: keep-all;
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+ChatBubbleMessage:after, ChatBubbleMessage:before {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+ChatBubbleMessage:after {
+    border-color: rgba(237, 237, 237, 0);
+    border-right-color: #ededed;
+    border-width: 4px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+ChatBubbleMessage:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-right-color: #000000;
+    border-width: 5px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.MessageInput > input[type=text] {
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 20%, #ececec 21%, #ececec 51%, #ededed 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,#ffffff), color-stop(21%,#ececec), color-stop(51%,#ececec), color-stop(100%,#ededed));
+    background: -webkit-linear-gradient(top,  #ffffff 20%,#ececec 21%,#ececec 51%,#ededed 100%);
+    background: -o-linear-gradient(top,  #ffffff 20%,#ececec 21%,#ececec 51%,#ededed 100%);
+    background: -ms-linear-gradient(top,  #ffffff 20%,#ececec 21%,#ececec 51%,#ededed 100%);
+    background: linear-gradient(to bottom,  #ffffff 20%,#ececec 21%,#ececec 51%,#ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+}
+
+.MessageInput > label {
+    position: absolute;
+    visibility: hidden;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.MessageInput > input[type=text] {
+    height: 20px;
+    width: 65px;
+    min-width: 65px;
+    max-width: 600px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 200;
+    border: 0px;
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.MessageInput > input[type=text]::-webkit-input-placeholder {
+    padding-top: 3px;
+    color: #BBBBBB;
+    font-style: italic;
+}
+
+.MessageInput > input[type=text]:-moz-placeholder {
+    padding-top: 3px;
+    color: #BBBBBB;
+    font-style: italic;
+}
+
+.MessageInput > input[type=text]::-moz-placeholder {
+    padding-top: 3px;
+    color: #BBBBBB;
+    font-style: italic;
+}
+
+.MessageInput > input[type=text]:-ms-input-placeholder {
+    padding-top: 3px;
+    color: #BBBBBB;
+    font-style: italic;
+}
+
+.MessageInput {
+    height: 30px;
+    position: relative;
+    background: #fff;
+    border: 2px solid #000000;
+    display: inline-block;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    padding: 0px;
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+}
+.MessageInput:after, .MessageInput:before {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.MessageInput:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ececec;
+    border-width: 6px;
+    top: 50%;
+    margin-top: -6px;
+}
+.MessageInput:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-right-color: #000000;
+    border-width: 9px;
+    top: 50%;
+    margin-top: -9px;
+}
+
+
+NavBar {
+    display: block;
+    background-color: #56534c;
+    width: 100px;
+    padding: 5px 5px 5px 5px;
+    -webkit-border-radius: 0px 6px 6px 0px;
+    border-radius: 0px 6px 6px 0px;
+    border: 1px solid #000000;
+    -webkit-box-shadow:  2px 2px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 2px #78746d;
+    box-shadow:  2px 2px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px 2px #78746d;
+
+    font-size: 13px;
+    font-family: sans-serif;
+    color: #000;
+    font-weight: 700;
+
+    text-shadow: 1px 1px 0px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=1);
+    cursor: pointer;
+}
+
+NavBar > NavButton {
+    color: #AAAAAA;
+    display: block;
+    position: relative;
+    border-radius: 6px;
+    height: 50px;
+    padding: 25px;
+    padding-bottom: 20px;
+}
+
+NavBar > NavButton:hover {
+    color: #FFFFFF;
+    -webkit-box-shadow: inset 0px 0px 0px 2px #827d76;
+    box-shadow: inset 0px 0px 0px 2px #827d76;
+    background-color: #827d76;
+}
+
+NavBar > NavButton:active {
+    -webkit-box-shadow: inset 0px 0px 0px 2px #44403F;
+    box-shadow: inset 0px 0px 0px 2px #44403F;
+    background-color: #4f4b47;
+}
+
+NavBar > NavButton > img {
+    position: absolute;
+    bottom: 35px;
+}
+
+NavBar > NavButton > NavLabel {
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 12px;
+    width: 100px;
+    text-align: center;
+}
+
+
+
+actionButton {
+    display: inline-block;
+    height: 12px;
+    padding: 6px 6px 8px 6px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: center;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #FFF;
+    box-shadow: inset 0px 0px 0px 1px #FFF;
+    text-shadow: 1px 1px 0px #CCC;
+    filter: dropshadow(color=#CCC, offx=1, offy=1);
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 50%, #cccccc 51%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#ffffff), color-stop(51%,#cccccc));
+    background: -webkit-linear-gradient(top,  #ffffff 50%,#cccccc 51%);
+    background: -o-linear-gradient(top,  #ffffff 50%,#cccccc 51%);
+    background: -ms-linear-gradient(top,  #ffffff 50%,#cccccc 51%);
+    background: linear-gradient(to bottom,  #ffffff 50%,#cccccc 51%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 );
+    cursor: pointer;
+}
+
+actionButton:hover {
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 50%, #dddddd 51%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#ffffff), color-stop(51%,#dddddd));
+    background: -webkit-linear-gradient(top,  #ffffff 50%,#dddddd 51%);
+    background: -o-linear-gradient(top,  #ffffff 50%,#dddddd 51%);
+    background: -ms-linear-gradient(top,  #ffffff 50%,#dddddd 51%);
+    background: linear-gradient(to bottom,  #ffffff 50%,#dddddd 51%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 );
+}
+
+actionButton:active {
+    -webkit-box-shadow: inset 0px 0px 0px 1px #999;
+    box-shadow: inset 0px 0px 0px 1px #999;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 50%, #bbbbbb 51%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#ffffff), color-stop(51%,#bbbbbb));
+    background: -webkit-linear-gradient(top,  #ffffff 50%,#bbbbbb 51%);
+    background: -o-linear-gradient(top,  #ffffff 50%,#bbbbbb 51%);
+    background: -ms-linear-gradient(top,  #ffffff 50%,#bbbbbb 51%);
+    background: linear-gradient(to bottom,  #ffffff 50%,#bbbbbb 51%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bbbbbb',GradientType=0 );
+}
+
+InfoBox {
+    display: block;
+    width: 150px;
+    height: 250px;
+    color: #FFF;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 700;
+    background-color: #000;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    padding: 8px;
+    opacity: 0.9;
+    -webkit-box-shadow:
+        inset 0px 0px 0px 2px #555,
+        2px 2px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow:
+        inset 0px 0px 0px 2px #555,
+        2px 2px 0px 0px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=1, offy=1);
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0.5)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 );
+}
+
+InfoBox > InfoTitle {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -6px;
+    left: -6px;
+    width: 146px;
+    background-color: #666;
+    padding: 6px 8px 4px 8px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-box-shadow:  0px 1px 0px 0px #000;
+    box-shadow:  0px 1px 0px 0px #555;
+}
+
+InfoBox > img {
+    display: inline-block;
+    position: relative;
+    background: no-repeat center center;
+    height: 50%;
+    width: 50%;
+}
+
+InfoBox > InfoContent {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    top: 0px;
+}
+
+InfoContent > actionButton {
+    position: relative;
+    margin-bottom: 3px;
+    display: block;
+    width:134px;
+}
+
+InfoBox > InfoBadges {
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    left: 10px;
+    width: 70px;
+}
+
+InfoBox > InfoBadges > img {
+    display: inline;
+}
+
+modalLink {
+    display: block;
+    padding-top: 5px;
+    background-color: #2d3032;
+    width: 100%;
+    height: 25px;
+    color: #FFF;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-size: 12px;
+    text-shadow: 1px 1px 0px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+
+modalLink > left {
+    font-size: 17px;
+    padding: 0px 5px 0px 0px;
+    position: relative;
+    height: 30px;
+    left: 5px;
+}
+
+modalLink:hover {
+    background-color: #34373a;
+}
+
+modalLink > right
+{
+    position: absolute;
+    padding: 5px 5px 0px 5px;
+    margin-top: -5px;
+    height: 25px;
+    right: 15px;
+    background-color: #2a2c2e;
+    border-left: 1px solid #353535;
+}
+
+#chatbox {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    display: block;
+    overflow: auto;
+    height: 70px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#chatbox message {
+    display: block;
+}
+
+#chatbox message name {
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: 700;
+}
